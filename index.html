@@ -1,11 +1,170 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; url=/OhioGambling/">
-  </head>
-  <body>
-    <p>Redirecting to <a href="/OhioGambling/">OhioGambling</a>...</p>
-  </body>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>OhioGambling/ </title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    overflow-x: hidden;
+    position: relative;
+  }
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    position: relative;
+    z-index: 10; /* מעל האנימציה */
+  }
+  h1, h2, h3 {
+    color: #ff5500;
+  }
+  a {
+    color: #00bcd4;
+    text-decoration: none;
+  }
+  .highlight {
+    background: #1e1e1e;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 1.5rem 0;
+  }
+  .btn {
+    display: inline-block;
+    background: #ff5500;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  .btn:hover {
+    background: #e64a00;
+  }
+  /* רשימות עם כיוון LTR כדי שהאימוג'י יצביע ימינה */
+  ul {
+    direction: ltr;
+    padding-right: 1.2rem;
+  }
+  li::marker {
+    content: "👉 ";
+  }
+  /* רקע מונפש */
+  .floating {
+    position: fixed;
+    user-select: none;
+    pointer-events: none;
+    font-size: 20px;
+    opacity: 0.15;
+    color: #ff3333; /* אדום בוהק */
+    animation-timing-function: ease-in-out;
+    will-change: transform;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>⭐️ שחקנים יקרים – איפה תראו עוד בונוס כזה?! 🤪</h1>
+  <h2>🔥 אפליקציית ClubGG Ohio Gambling 🔥</h2>
+
+  <div class="highlight">
+    <h3>💸 בונוסים מטורפים:</h3>
+    <ul>
+      <li><strong>הפקדה ראשונה – 70% בונוס!</strong><br>הפקדת ₪500? קיבלת ₪850!<br>הפקדת ₪1,000? קיבלת ₪1,500!</li>
+      <li><strong>הפקדה שנייה – 50%</strong></li>
+      <li><strong>הפקדה שלישית – 25%</strong></li>
+      <li><strong>הפקדות קבועות – 10%</strong></li>
+    </ul>
+  </div>
+
+  <h3>🃏 מה מחכה לכם?</h3>
+  <ul>
+    <li>הקלאב החזק בארץ 🇮🇱</li>
+    <li>שולחנות מ־1/2 ועד 100/200 – מתאים לכל כיס</li>
+    <li>⭐ מעל 30 שולחנות פעילים עכשיו</li>
+    <li>🕐 משחקים רצים 24/7</li>
+    <li>♥ טקסס הולדם</li>
+    <li>♦ אומהה – 4 / 5 / 6 קלפים</li>
+    <li>🏆 טורנירים יומיים עם 500₪ פרסים</li>
+    <li>🐑 מלא "כבשים" מחכים שתיקח מהם</li>
+  </ul>
+
+  <div class="highlight">
+    <h3>🏰 בונוסים והחזרי גנייה:</h3>
+    <ul>
+      <li>💰 בונוס למצטרפים חדשים</li>
+      <li>↺ החזרי גנייה עד 80%</li>
+      <li>🤝 שירות ואמינות – רמה גבוהה</li>
+    </ul>
+  </div>
+
+  <h3>👋 רוצה להיות סוכן ולהרוויח בגדול?</h3>
+  <p>שלח לנו הודעה ותצטרף למשפחה שלנו – תעשה הרבה כסף כל שבוע! 🔥</p>
+
+  <div class="highlight">
+    <h3>📲 פרטי הצטרפות:</h3>
+    <ul>
+      <li><strong>מספר טלפון להפקדות:</strong> 055-923-7349</li>
+      <li><strong>קוד קלאב:</strong> 609936</li>
+      <li><strong>קוד סוכן:</strong> 7366-3301</li>
+      <li><a class="btn" href="https://wa.me/message/VQROVLQPYMZZG1" target="_blank">💌 לחץ כאן ליצירת קשר בוואטסאפ</a></li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  const symbols = ['♠', '♥', '♦', '♣', '●'];
+  const floatingCount = 70; // הרבה פריטים
+
+  function createFloating() {
+    const span = document.createElement('span');
+    span.classList.add('floating');
+    span.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+    span.style.left = Math.random() * 100 + 'vw'; // רוחב אקראי
+    span.style.top = 100 + 'vh'; // מתחילים מתחת למסך
+
+    // גודל אקראי בין 14px ל-36px
+    span.style.fontSize = (14 + Math.random() * 22) + 'px';
+
+    // משך אנימציה אקראי בין 10 ל-25 שניות
+    const duration = 10 + Math.random() * 15;
+    span.style.animation = `floatUpDown ${duration}s infinite alternate`;
+
+    // תזוזת אנימציה שונה לפי פריט
+    const offsetX = (Math.random() - 0.5) * 70; // עד 35vw שמאלה/ימינה
+    span.style.setProperty('--offsetX', offsetX + 'vw');
+
+    document.body.appendChild(span);
+    return {element: span, duration, offsetX};
+  }
+
+  const style = document.createElement('style');
+  style.textContent = `
+    @keyframes floatUpDown {
+      0% {
+        transform: translateX(calc(var(--offsetX) * -1)) translateY(0);
+        opacity: 0.12;
+      }
+      50% {
+        opacity: 0.28;
+      }
+      100% {
+        transform: translateX(var(--offsetX)) translateY(-120vh);
+        opacity: 0;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+
+  for(let i=0; i < floatingCount; i++) {
+    setTimeout(createFloating, i * 200); // פיזור יצירה
+  }
+</script>
+
+</body>
 </html>
